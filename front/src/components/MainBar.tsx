@@ -7,8 +7,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Logo from '/vite.svg';
-import { Avatar } from '@mui/material';
-// import { useAccount } from 'wagmi';
 import { ConnectKitButton } from 'connectkit';
 import { Stack } from '@mui/system';
 
@@ -17,10 +15,10 @@ const pages = ['MarketPlace', 'Factory'];
 function MainBar() {
   const navigate = useNavigate();
   // const account = useAccount();
-  const goToProfile = ()=>{
-    // if(account.isConnected)
-    //   navigate("/real-token/Profile/"+account.address);
-  }
+  // const goToProfile = ()=>{
+  //   // if(account.isConnected)
+  //   //   navigate("/real-token/Profile/"+account.address);
+  // }
   const handleCloseNavMenu = (key: string) => {
     console.log("Redirect to page: ",key);
     if(key == "MarketPlace"){
